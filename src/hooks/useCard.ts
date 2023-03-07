@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchCardsRequest } from "../store/reducers/cardSlice";
 import { RootState } from "../store/store";
 
-const useCard = (amount: number) => {
+export const useCard = (amount: number) => {
   const dispatch = useDispatch();
   const { cards, loading, error } = useSelector(
     (state: RootState) => state.card
@@ -15,5 +15,3 @@ const useCard = (amount: number) => {
 
   return { cards, loading, error };
 };
-
-export default useCard;
