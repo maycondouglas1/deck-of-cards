@@ -9,7 +9,7 @@ npm install ou yarn
 # Inicie o servidor de desenvolvimento:
 npm run dev ou yarn run dev
 
-#Tecnologias e bibliotecas utilizadas:
+# Tecnologias e bibliotecas utilizadas:
 - React
 - Material UI
 - Redux
