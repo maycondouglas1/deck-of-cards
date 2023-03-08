@@ -3,7 +3,7 @@
 #Como rodar o projeto
 Antes de tudo, é necessário ter o Node.js instalado na sua máquina. Após a instalação, siga os seguintes passos:
 
-No terminal e na pasta raiz do projeto rode o comando abaixo e instale as dependências:
+# No terminal e na pasta raiz do projeto rode o comando abaixo e instale as dependências:
 npm install ou yarn
 
 # Inicie o servidor de desenvolvimento:
