@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import FeaturedPlayListIcon from "@mui/icons-material/FeaturedPlayList";
 import HomeIcon from "@mui/icons-material/Home";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import {
   Drawer,
   List,
@@ -24,6 +25,7 @@ import logoImg from "../../assets/deck.png";
 
 const Navbar: React.FC = () => {
   const { user } = useSelector((state: any) => state.user);
+  const navigate = useNavigate();
   const [mobileMenu, setMobileMenu] = useState({
     left: false,
   });
@@ -47,7 +49,7 @@ const Navbar: React.FC = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Home", "Cards"].map((text, index) => (
+        {["Início", "Cartas"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -73,7 +75,10 @@ const Navbar: React.FC = () => {
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <CustomMenuIcon color="primary" onClick={toggleDrawer("left", true)} />
+          <CustomMenuIcon
+            color="primary"
+            onClick={toggleDrawer("left", true)}
+          />
           <Drawer
             anchor="left"
             open={mobileMenu["left"]}
@@ -85,11 +90,14 @@ const Navbar: React.FC = () => {
         </Box>
 
         <NavbarLinksBox>
-          <NavLink variant="body2">Home</NavLink>
-          <NavLink variant="body2">Cards</NavLink>
+          <NavLink onClick={() => navigate("/")} variant="body2">
+            Início
+          </NavLink>
+          <NavLink onClick={() => navigate("/cards")} variant="body2">
+            Cartas
+          </NavLink>
         </NavbarLinksBox>
       </Box>
-
       <Box
         sx={{
           display: "flex",
@@ -98,7 +106,7 @@ const Navbar: React.FC = () => {
           gap: "1rem",
         }}
       >
-        <UserName variant="body2">Maycon Douglas</UserName>
+        <UserName variant="body2">Olá, {user.name}</UserName>
       </Box>
     </NavbarContainer>
   );

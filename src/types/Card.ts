@@ -1,8 +1,7 @@
 interface Card {
-  id: number;
-  name: string;
+  code: string;
+  suit: string;
   image: string;
-  description: string;
   value: string;
 }
 
