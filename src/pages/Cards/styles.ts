@@ -36,6 +36,19 @@ export const Head = styled("div")(({ theme }) => ({
   margin: "0 auto",
   width: "100%",
   maxWidth: "1200px",
+  
+  "& button": {
+    marginTop: "10px",
+    marginBottom: "10px",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column",
+  },
+
+  [theme.breakpoints.down("xs")]: {
+    flexDirection: "column",
+  },
 }));
 
 export const CardContainer = styled("div")(({ theme }) => ({
