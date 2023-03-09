@@ -8,6 +8,7 @@ npm install ou yarn
 
 ## Inicie o servidor de desenvolvimento:
 npm run dev ou yarn run dev
+Acesse a rota padrão do Vite: localhost:5173
 
 ## Tecnologias e bibliotecas utilizadas:
 - React
