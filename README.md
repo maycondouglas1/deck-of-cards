@@ -17,6 +17,9 @@ npm run dev ou yarn run dev
 - React Card Flip
 - React spinners
 
+# Api utilizada:
+https://deckofcardsapi.com/
+
 
 
 
