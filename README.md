@@ -1,4 +1,4 @@
-Baralho de cartas aleatórias.
+## Baralho de cartas aleatórias.
 
 ## Como executar o projeto
 Antes de tudo, é necessário ter o Node.js (https://nodejs.org/en/) instalado na sua máquina. Após a instalação, siga os seguintes passos:
