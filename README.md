@@ -15,7 +15,7 @@ npm run dev ou yarn run dev
 - Redux Saga
 - Axios
 - React Card Flip
-- React Tostify
+- React spinners
 
 
 
