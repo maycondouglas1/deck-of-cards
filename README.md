@@ -1,13 +1,15 @@
-# Como executar o projeto
+Baralho de cartas aleatórias.
+
+## Como executar o projeto
 Antes de tudo, é necessário ter o Node.js (https://nodejs.org/en/) instalado na sua máquina. Após a instalação, siga os seguintes passos:
 
-# No terminal e na pasta raiz do projeto rode o comando abaixo e instale as dependências:
+## No terminal e na pasta raiz do projeto rode o comando abaixo e instale as dependências:
 npm install ou yarn
 
-# Inicie o servidor de desenvolvimento:
+## Inicie o servidor de desenvolvimento:
 npm run dev ou yarn run dev
 
-# Tecnologias e bibliotecas utilizadas:
+## Tecnologias e bibliotecas utilizadas:
 - React
 - Material UI
 - Redux
@@ -17,7 +19,7 @@ npm run dev ou yarn run dev
 - React Card Flip
 - React spinners
 
-# API utilizada:
+## API utilizada:
 https://deckofcardsapi.com/
 
 
